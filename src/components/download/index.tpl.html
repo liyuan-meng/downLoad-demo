@@ -1,0 +1,19 @@
+<div class="download">
+   <table>
+      <thead>
+         <th>姓名</th>
+         <th>年龄</th>
+         <th>电话</th>
+      </thead>
+      <tbody>
+         <tr ng-repeat="item in $ctrl.data track by $index">
+            <td ng-bind="item.name"></td>
+            <td ng-bind="item.age"></td>
+            <td ng-bind="item.mobile"></td>
+         </tr>
+      </tbody>
+   </table>
+   <button ng-click="$ctrl.exportByBlob()">导出</button>
+   <button ng-click="$ctrl.exportByDataUrls()">导出(dataURLs)</button>
+   <button ng-click="$ctrl.exportZip()">导出压缩包</button>
+</div>

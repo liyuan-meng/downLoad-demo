@@ -1,0 +1,37 @@
+<div class="print">
+   <h2 style="text-align: center">美团外卖</h2>
+   <div class="order-time">下单时间：07-13 15:23</div>
+   <div>********************************</div>
+   <div>——————一号口袋——————</div>
+   <ul class="content">
+      <li ng-repeat="item in $ctrl.content">
+         <span>{{item.title}}</span>
+         <span>{{item.number}}</span>
+         <span>{{item.price}}</span>
+      </li>
+   </ul>
+   <div>———————其他———————</div>
+   <ul>
+      <li>
+         <span>餐盒费</span>
+         <span>1.4</span>
+      </li>
+      <li>
+         <span>配送费</span>
+         <span>3.0</span>
+      </li>
+      <li>
+         <span>[满25.0元减12.0元]</span>
+         <span>-￥12.0</span>
+      </li>
+   </ul>
+   <div>********************************</div>
+   <ul>
+      <li>
+         <span>原价：29.2元</span>
+      </li>
+      <li>
+         <span>(用户在线支付) <h2 style="font-size: 24px; display: inline-block">17.2元</h2> </span>
+      </li>
+   </ul>
+</div>
